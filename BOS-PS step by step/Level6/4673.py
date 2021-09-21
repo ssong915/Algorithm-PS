@@ -1,0 +1,4 @@
+arr = []
+
+def num(arr):
+    
