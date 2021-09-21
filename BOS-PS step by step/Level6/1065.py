@@ -14,4 +14,3 @@ def hansu(num):
 
 print(hansu(num))
         
-        
