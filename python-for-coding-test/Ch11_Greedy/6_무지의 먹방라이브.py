@@ -15,7 +15,7 @@ def solution(food_times, k):
     now = 0
     length = len(food_times)
 
-    while k - ((pq[0][0] - previous) * length) >= 0:
+    while k - ((pq[0][0] - previous) * length) >= 0: 
         now = heapq.heappop(pq)[0] # heappop: 원소삭제
         k -= ((now - previous) * length)
         length -= 1
