@@ -28,7 +28,7 @@ while(True):
     nx = nx + dx[dir]
     ny = ny + dy[dir]
 
-    if ( nx<0 or nx>=n or ny<0 or nx>=n or board[nx][ny]==1): # 벽이나, 몸에 닿으면
+    if ( nx<0 or nx>=n or ny<0 or ny>=n or board[nx][ny]==1): # 벽이나, 몸에 닿으면
         break
 
     if ( board[nx][ny] ==2 ): # 사과 있으면
