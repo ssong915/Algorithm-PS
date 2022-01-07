@@ -14,3 +14,7 @@ def dfs(graph, v, vistited):
 
 
 dfs(graph, 1, visited)
+
+# DFS 
+# 스택 구조
+# 재귀 함수를 사용하면 간결하게 구현
