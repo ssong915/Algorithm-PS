@@ -12,13 +12,12 @@ empty_spaces = []
 for i in range(N):
     for j in range(N):
         if graph[i][j] == 'T':
-            teachers.append(graph[i][j])
+            teachers.append((i,j))
         if graph[i][j] == 'X':
-            empty_spaces.append(graph[i][j])
+            empty_spaces.append((i,j))
 
 def monitored():
-    for teacher in teachers:
-        x, y = teacher
+    for x, y in teachers:
         # 상
         nx, ny = x, y
         while nx > 0:
