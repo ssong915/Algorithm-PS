@@ -1,5 +1,5 @@
 # Algorithm-PS
-💻 알고리즘 공부, 코딩테스트 준비 💻
+🛠 알고리즘 공부, 코딩테스트 준비 🛠
 - **이것이 코딩테스트다**   
   - LINK : [python-for-coding-test](https://github.com/ssong915/Algorithm-PS/tree/main/python-for-coding-test)
   - [문제출처](https://github.com/ndb796/python-for-coding-test)   
