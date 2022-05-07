@@ -1,22 +1,20 @@
-string_list = list(input())
-cursor = len(string_list)
+stack1 = list(input())
+stack2 = []
 
 for _ in range(int(input())):
     command = list(input().split())
     if command[0] == 'P':
-        string_list.insert(cursor, command[1])
-        cursor += 1
+        stack1.appedn(command[1])
   
     elif command[0] == 'L':
-        if cursor > 0:
-            cursor -= 1
+        if stack1:
+            stack2.append(stack1.pop())
 
     elif command[0] =='D':
-        if cursor < len(string_list):
-            cursor += 1
-  
-    else:
-        if cursor > 0:
-            string_list.remove(string_list[cursor-1])
+        if stack2:
+            stack1.append(stack2.pop())
 
-print(''.join(string_list))
+    else:
+        stack1 = []
+
+print(''.join(stack1+list(reversed(stack2))))
