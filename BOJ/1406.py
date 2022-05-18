@@ -4,7 +4,7 @@ stack2 = []
 for _ in range(int(input())):
     command = list(input().split())
     if command[0] == 'P':
-        stack1.appedn(command[1])
+        stack1.append(command[1])
   
     elif command[0] == 'L':
         if stack1:
