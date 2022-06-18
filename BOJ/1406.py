@@ -1,10 +1,9 @@
-from sys import stdin
-
-stack1 = list(stdin.readline().strip())
+import sys
+stack1 = list(sys.stdin.readline().strip())
 stack2 = []
 
-for _ in range(int(input())):
-    command = list(input().split())
+for _ in range(int(sys.stdin.readline())):
+    command = list(sys.stdin.readline().split())
     if command[0] == 'P':
         stack1.append(command[1])
 
@@ -17,6 +16,7 @@ for _ in range(int(input())):
             stack1.append(stack2.pop())
 
     else:
-        stack1 = []
+        if stack1:
+            stack1.pop()
 
 print(''.join(stack1+list(reversed(stack2))))
