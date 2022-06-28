@@ -1,6 +1,3 @@
-from re import L
-
-
 N = int(input())
 nums = []
 for _ in range(N):
