@@ -4,4 +4,4 @@ arr = list(set(arr))
 arr.sort()
 
 for num in arr:
-    print(num,)
+    print(num,end = ' ')
